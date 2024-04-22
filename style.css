@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas:
+    "yellow yellow purple"
+    "red green purple"
+    "red orchid orchid";
+
+    gap: 20px;
+    padding: 20px;
+}
+
+div:nth-child(1) {
+  background: yellow;
+}
+div:nth-child(2) {
+  background: purple;
+}
+div:nth-child(3) {
+  background: green;
+}
+div:nth-child(4) {
+  background: red;
+}
+div:nth-child(5) {
+  background: orchid;
+}
+
+#yellow {
+  grid-area: yellow;
+}
+#purple {
+  grid-area: purple;
+}
+#red {
+  grid-area: red;
+}
+#green {
+  grid-area: green;
+}
+#orchid {
+  grid-area: orchid;
+}
